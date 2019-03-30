@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="goods@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.10">
+    <root id="1">
+      <ServerVersion>5.0.24</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="db1808"/>
+    <schema id="3" parent="1" name="goods">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="java1808"/>
+    <schema id="6" parent="1" name="java1809"/>
+    <schema id="7" parent="1" name="java2019"/>
+    <schema id="8" parent="1" name="java8888"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="orders"/>
+    <schema id="11" parent="1" name="rentcar"/>
+    <schema id="12" parent="1" name="test"/>
+    <schema id="13" parent="1" name="wedding"/>
+    <table id="14" parent="3" name="wxb_good"/>
+    <table id="15" parent="3" name="wxb_good_sku"/>
+    <column id="16" parent="14" name="good_id">
+      <Position>1</Position>
+      <Comment>主键ID</Comment>
+      <DataType>VARCHAR(10)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="17" parent="14" name="good_name">
+      <Position>2</Position>
+      <Comment>商品名称</Comment>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="18" parent="14" name="customer_id">
+      <Position>3</Position>
+      <Comment>商户ID</Comment>
+      <DataType>VARCHAR(10)|12s</DataType>
+    </column>
+    <column id="19" parent="14" name="good_pic">
+      <Position>4</Position>
+      <Comment>商品图片</Comment>
+      <DataType>VARCHAR(400)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="20" parent="14" name="good_pic1">
+      <Position>5</Position>
+      <Comment>图片2</Comment>
+      <DataType>VARCHAR(400)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="21" parent="14" name="good_pic2">
+      <Position>6</Position>
+      <Comment>图片3</Comment>
+      <DataType>VARCHAR(400)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="22" parent="14" name="promote_desc">
+      <Position>7</Position>
+      <Comment>推广说明</Comment>
+      <DataType>VARCHAR(400)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="23" parent="14" name="sku_title">
+      <Position>8</Position>
+      <Comment>sku描述</Comment>
+      <DataType>VARCHAR(1000)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="24" parent="14" name="sku_cost">
+      <Position>9</Position>
+      <Comment>成本</Comment>
+      <DataType>VARCHAR(1000)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="25" parent="14" name="sku_price">
+      <Position>10</Position>
+      <Comment>价格</Comment>
+      <DataType>VARCHAR(1000)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="26" parent="14" name="sku_pmoney">
+      <Position>11</Position>
+      <Comment>分成</Comment>
+      <DataType>VARCHAR(1000)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="27" parent="14" name="copy_ids">
+      <Position>12</Position>
+      <Comment>文案ID</Comment>
+      <DataType>VARCHAR(100)|12s</DataType>
+    </column>
+    <column id="28" parent="14" name="copy_desc">
+      <Position>13</Position>
+      <Comment>文案说明</Comment>
+      <DataType>VARCHAR(300)|12s</DataType>
+    </column>
+    <column id="29" parent="14" name="forward_link">
+      <Position>14</Position>
+      <Comment>跳转链接</Comment>
+      <DataType>VARCHAR(400)|12s</DataType>
+    </column>
+    <column id="30" parent="14" name="order_no">
+      <Position>15</Position>
+      <Comment>排序编号</Comment>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="31" parent="14" name="type_id">
+      <Position>16</Position>
+      <Comment>商品分类</Comment>
+      <DataType>VARCHAR(10)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="32" parent="14" name="tags">
+      <Position>17</Position>
+      <Comment>标签信息</Comment>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="33" parent="14" name="state">
+      <Position>18</Position>
+      <Comment>是否有效 0 待审核 1 已上架 2 已下架</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="34" parent="14" name="create_time">
+      <Position>19</Position>
+      <Comment>加入时间</Comment>
+      <DataType>DATETIME(19)|93s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="35" parent="14" name="toped">
+      <Position>20</Position>
+      <Comment>是否置顶 0 取消置顶 1 置顶</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="36" parent="14" name="recomed">
+      <Position>21</Position>
+      <Comment>是否推荐 0 否 1 是</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="37" parent="14" name="toped_time">
+      <Position>22</Position>
+      <Comment>置顶时间</Comment>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <column id="38" parent="14" name="recomed_time">
+      <Position>23</Position>
+      <Comment>推荐时间</Comment>
+      <DataType>DATETIME(19)|93s</DataType>
+    </column>
+    <column id="39" parent="14" name="spc_id">
+      <Position>24</Position>
+      <Comment>站内文案ID</Comment>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="40" parent="14" name="zon_id">
+      <Position>25</Position>
+      <Comment>空间文案ID</Comment>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="41" parent="14" name="sell_num">
+      <Position>26</Position>
+      <Comment>购买人数作弊值</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="42" parent="14" name="website">
+      <Position>27</Position>
+      <Comment>产品网址</Comment>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="43" parent="14" name="iswxpay">
+      <Position>28</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="44" parent="14" name="isfdfk">
+      <Position>29</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="45" parent="14" name="leixing_id">
+      <Position>30</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="46" parent="14" name="kfqq">
+      <Position>31</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <index id="47" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>good_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="48" parent="14" name="good_id">
+      <ColNames>good_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="49" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>good_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="50" parent="15" name="sku_id">
+      <Position>1</Position>
+      <Comment>套餐主键</Comment>
+      <DataType>VARCHAR(10)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="51" parent="15" name="sku_name">
+      <Position>2</Position>
+      <Comment>套餐名称</Comment>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="52" parent="15" name="sku_cost">
+      <Position>3</Position>
+      <Comment>成本</Comment>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="53" parent="15" name="sku_price">
+      <Position>4</Position>
+      <Comment>价格</Comment>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="54" parent="15" name="sku_pmoney">
+      <Position>5</Position>
+      <Comment>分成</Comment>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="55" parent="15" name="good_id">
+      <Position>6</Position>
+      <Comment>商品ID</Comment>
+      <DataType>VARCHAR(10)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="56" parent="15" name="order_no">
+      <Position>7</Position>
+      <Comment>排序</Comment>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="57" parent="15" name="service_money">
+      <Position>8</Position>
+      <Comment>客服提成</Comment>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0.00&apos;</DefaultExpression>
+    </column>
+    <index id="58" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sku_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="59" parent="15" name="sku_id">
+      <ColNames>sku_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="60" parent="15" name="good_id">
+      <ColNames>good_id</ColNames>
+    </index>
+    <key id="61" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sku_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
