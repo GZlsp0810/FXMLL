@@ -8,10 +8,20 @@
     <servlet-name>goodsServlet</servlet-name>
     <servlet-class>com.qianfeng.fxmall.goods.controller.GoodsServlet</servlet-class>
   </servlet>
+
   <servlet>
   <servlet-name>GoodAddServlet</servlet-name>
   <servlet-class>com.qianfeng.fxmall.goods.controller.GoodAddServlet</servlet-class>
 </servlet>
+  <servlet>
+    <servlet-name>GoodsquryServlet</servlet-name>
+    <servlet-class>com.qianfeng.fxmall.goods.controller.GoodsquryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GoodsquryServlet</servlet-name>
+    <url-pattern>goodbyid.do</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>goodsServlet</servlet-name>
     <url-pattern>/goods.do</url-pattern>

@@ -20,4 +20,11 @@ public interface GoodsMapper {
      * @param goods
      */
     void insertGodds(WxbGood goods);
+
+    /**
+     * 查询商品
+     * @param goodId
+     * @return
+     */
+    WxbGood queryGoodsById( @Param("goodId") String goodId);
 }
