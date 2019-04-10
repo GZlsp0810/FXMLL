@@ -5,6 +5,17 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
+    <servlet-name>spring</servlet-name>
+    <!--spring容器初始化 核心入口类-->
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:spring.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
     <servlet-name>goodsServlet</servlet-name>
     <servlet-class>com.qianfeng.fxmall.goods.controller.GoodsServlet</servlet-class>
   </servlet>
@@ -19,7 +30,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>GoodsquryServlet</servlet-name>
-    <url-pattern>goodbyid.do</url-pattern>
+    <url-pattern>/goodbyid.do</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
@@ -29,6 +40,10 @@
 
   <servlet-mapping>
     <servlet-name>GoodAddServlet</servlet-name>
-    <url-pattern>goodadd.do</url-pattern>
+    <url-pattern>/goodadd.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>

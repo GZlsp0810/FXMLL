@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qianfeng.fxmall.user.mapper.UserMapper">
+    <resultMap id="baseResulMap" type="com.qianfeng.fxmall.user.po.WxbMemeber">
+        <id property="memeber_id" column="memeberId"/>
+        <result property="qqNum" column="qq_num"/>
+        <result property="recomUser" column="recom_user"/>
+        <result property="registerTime" column="register_time"/>
+        <result property="payAccount" column="pay_account"/>
+        <result property="visitCode" column="visit_code"/>
+        <result property="useRecom" column="use_recom"/>
+        <result property="levelCode" column="level_code"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+    <sql id="params">
+       memeber_id,account,qq_num,email,phone,recom_user,register_time,pay_account,
+       name,password,visit_code,use_recom,level_code,mid,update_time
+    </sql>
+
+    <select id="checkUsername" resultMap="baseResulMap">
+      select <include refid="params"/> from wxb_memeber where phone=#{phone};
+    </select>
+</mapper>
