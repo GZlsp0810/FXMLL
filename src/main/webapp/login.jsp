@@ -17,25 +17,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://localhost:8081/wxb/images/favicon.ico">
     <link rel="icon" type="image/gif" href="http://localhost:8081/wxb/images/favicon.gif">
-    <link rel="stylesheet" type="text/css" href="./static/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./static/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./static/style-metronic.css">
-    <link rel="stylesheet" type="text/css" href="./static/style.css">
-    <link rel="stylesheet" type="text/css" href="./static/index.css">
+    <link rel="stylesheet" type="text/css" href="./static1/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./static1/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./static1/style-metronic.css">
+    <link rel="stylesheet" type="text/css" href="./static1/style.css">
+    <link rel="stylesheet" type="text/css" href="./static1/index.css">
 
     <!--[if IE 8]>
     <script type="text/javascript" src="/wxb/script/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="./static/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="./static/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./static/underscore-min.js"></script>
-    <script type="text/javascript" src="./static/back-to-top.js"></script>
-    <script type="text/javascript" src="./static/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="./static/win.js"></script>
-    <script type="text/javascript" src="./static/app.js"></script>
-    <script type="text/javascript" src="./static/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="./static/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="./static/additional-methods.min.js"></script>
+    <script type="text/javascript" src="./static1/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./static1/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./static1/underscore-min.js"></script>
+    <script type="text/javascript" src="./static1/back-to-top.js"></script>
+    <script type="text/javascript" src="./static1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="./static1/win.js"></script>
+    <script type="text/javascript" src="./static1/app.js"></script>
+    <script type="text/javascript" src="./static1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="./static1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./static1/additional-methods.min.js"></script>
     <script>
         var SITE_PUBLIC='http://localhost:8081/';
         var SITE_UPLOAD='/files/';
@@ -52,7 +52,7 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="http://localhost:8081/user/index">
-            <img src="./static/logo.png" id="logoimg" alt="logo">
+            <img src="./static1/logo.png" id="logoimg" alt="logo">
             </a>
         </div>
         <div class="pull-right index-header-lsist" style="aligin:right;margin-top:35px;">
@@ -103,7 +103,7 @@
                     </div>
                     <%--<div id="" class="form-group -warpper" style="margin-bottom: 5px;display: none;">--%>
                         <%--<input class="form-control " id="" type="text" name="" placeholder="验证码">--%>
-                        <%--<img class="check-code js-refresh-check" src="./static/" alt="验证码">--%>
+                        <%--<img class="check-code js-refresh-check" src="./static1/" alt="验证码">--%>
                         <%--<a class="js-refresh-check" href="javascript:void(0);">换一张</a>--%>
                     <%--</div>--%>
                     <div class="form-group" style="margin-bottom: 10px;">
@@ -116,9 +116,9 @@
             </div>
             <div class="banner-wrap">
                 <div class="banner-1">
-                    <img class="b2_cloud" src="./static/2_cloud.png" alt="">
-                    <img class="b2_word" src="./static/2_word.png" alt="">
-                    <img class="b2_bottom" src="./static/2_bottom.png" alt="">
+                    <img class="b2_cloud" src="./static1/2_cloud.png" alt="">
+                    <img class="b2_word" src="./static1/2_word.png" alt="">
+                    <img class="b2_bottom" src="./static1/2_bottom.png" alt="">
                     <li style="color:#177EC1">
                         <b>
                             <a class="zt_link" href="http://localhost:8081/user/login#" onclick="javascript:if(confirm( ';即将推出 敬请期待';)) href= ';#';;"></a>
@@ -127,14 +127,14 @@
 
                 </div>
                 <div class="banner-2">
-                    <img class="b1_cloud" src="./static/1_cloud.png" alt="">
-                    <img class="b1_circle" src="./static/1_circle.png" alt="">
-                    <img class="b1_bottom" src="./static/1_bottom.png" alt="">
+                    <img class="b1_cloud" src="./static1/1_cloud.png" alt="">
+                    <img class="b1_circle" src="./static1/1_circle.png" alt="">
+                    <img class="b1_bottom" src="./static1/1_bottom.png" alt="">
                 </div>
                 <div class="banner-3">
-                    <img class="b3_word" src="./static/3_word.png" alt="">
-                    <img class="b3_human" src="./static/3_human.png" alt="">
-                    <img class="b3_ufo" src="./static/3_ufo.png" alt="">
+                    <img class="b3_word" src="./static1/3_word.png" alt="">
+                    <img class="b3_human" src="./static1/3_human.png" alt="">
+                    <img class="b3_ufo" src="./static1/3_ufo.png" alt="">
                     <a class="banner_download_link" target="_blank" href="http://localhost:8081/user/register"></a>
                 </div>
             </div>
@@ -270,7 +270,7 @@
 </div>
 
 <div class="right-service closed">
-    <img class="RS-img" src="./static/wxb.png">
+    <img class="RS-img" src="./static1/wxb.png">
     <div class="RS-wrap">
         <div class="RS-title">@在线客服<span class="RS-title-right-btn"><i class="fa fa-angle-right"></i></span></div>
         <div class="RS-title-for-closed"><i class="fa fa-ellipsis-h"></i><br>在线客服</div>
@@ -287,7 +287,7 @@
 
 
 <div class="right-service closed">
-    <img class="RS-img" src="./static/wxb.png">
+    <img class="RS-img" src="./static1/wxb.png">
     <div class="RS-wrap">
         <div class="RS-title">@在线客服<span class="RS-title-right-btn"><i class="fa fa-angle-right"></i></span></div>
         <div class="RS-title-for-closed"><i class="fa fa-ellipsis-h"></i><br>在线客服</div>
@@ -303,10 +303,10 @@
 <div class="copyright">
     <div class="container text-center">
         <p>
-            <span class="copyright-icon copyright-icon-1"><img src="./static/copyright-pic-1.jpg" width="94"></span>
-            <span class="copyright-icon copyright-icon-2"><img src="./static/copyright-pic-2.jpg" width="94"></span>
-            <span class="copyright-icon copyright-icon-3"><img src="./static/copyright-pic-3.jpg" width="117"></span>
-            <span class="copyright-icon copyright-icon-4"><img src="./static/copyright-pic-4.jpg" width="109"></span>
+            <span class="copyright-icon copyright-icon-1"><img src="./static1/copyright-pic-1.jpg" width="94"></span>
+            <span class="copyright-icon copyright-icon-2"><img src="./static1/copyright-pic-2.jpg" width="94"></span>
+            <span class="copyright-icon copyright-icon-3"><img src="./static1/copyright-pic-3.jpg" width="117"></span>
+            <span class="copyright-icon copyright-icon-4"><img src="./static1/copyright-pic-4.jpg" width="109"></span>
         </p>
         <p>
             Copyright ? 2015
