@@ -49,6 +49,7 @@
 
     <!-- head over-->
     <link href="./static/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 </head>
 
 <body style="">
@@ -530,7 +531,7 @@
                     </h1>
                 </div>
 
-                <form method="post" name="copy_form" id="copy_form" action="goodadd.do"
+                <form method="post" name="copy_form" id="upadd" action="upload"
                       enctype="multipart/form-data">
                     <div class="widget-main">
                         <input type="hidden" id="sku_str" name="sku_str" value="">
@@ -812,10 +813,11 @@
 
                             <tr>
                                 <td colspan="2" align="center">
-							             <span id="submit" onclick="submitData();" class="btn btn-lxg btn-primary">
-							               <i class="icon-save bigger-120"></i>
-							                保存
-							             </span>
+							             <%--<span id="button" onclick="upload();" class="btn btn-lxg btn-primary">--%>
+							               <%--<i class="icon-save bigger-120"></i>--%>
+							                <%--保存--%>
+							             <%--</span>--%>
+                                             <input type="button" value="保存" onclick="upload()">
                                     <span id="back" onclick="goToPage('/cust/goods/list');"
                                           class="btn btn-lxg btn-undo">
 							             <i class="icon-undo bigger-120"></i>
@@ -1102,7 +1104,25 @@
     }
 
 </script>
-
+  <script type="text/javascript">
+   function upload() {
+       //获取form表单
+       var form=("#upadd")[6];
+       //将HTML表单中的标签转换成JS中的表单对象
+      var formData=new FormData(form);
+      $.ajax({
+          url:"upload",
+          method:"post",
+          date:"formData",
+          contentType:false, //内容false才能上传file文件,配置false是为了清除默认文件格式，false表示无文件格式。
+          processData:false,//false表示不将参数转换成字符串
+          success:function (data) {
+              alert(data.code+"/"+data.msg)
+              $("#sm_yl1").attr("src",data.msg);
+          }
+      });
+   }
+  </script>
 
 <div id="ldg_dragmask"
      style="display: none; position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; cursor: move; opacity: 0; background: rgb(255, 255, 255); pointer-events: none;"></div>

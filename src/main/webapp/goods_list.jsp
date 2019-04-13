@@ -185,7 +185,7 @@
                         </li>
 
                         <li>
-                            <a href="http://localhost:8081/cust/goods/add">
+                            <a href="goods__add.jsp">
                                 <i class="icon-pencil"></i>
                                 增加商品
                             </a>
